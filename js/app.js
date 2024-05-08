@@ -3,7 +3,8 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        discs: []
+        discs: [],
+        isVisible: false
       }
     },
     methods: {
@@ -13,6 +14,9 @@ const { createApp } = Vue
           this.discs = res.data.results;
           console.log(this.discs);
         })
+      },
+      showModal(){
+        this.isVisible = true;
       }
     },
     created(){

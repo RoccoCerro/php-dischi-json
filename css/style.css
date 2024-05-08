@@ -3,6 +3,7 @@ img{
   width: 100%;
 }
 
+/* Style index.php */
 header.page-header{
   background-color: #06131F;
 
@@ -20,4 +21,12 @@ header.page-header{
 main.page-main{
   background-color: #1D2D3C;
   padding: 15px 0;
+}
+
+/* Style modal.php */
+footer.modal{
+  width: 500px;
+  height: 500px;
+  aspect-ratio: 1/1;
+  background-color: black;
 }

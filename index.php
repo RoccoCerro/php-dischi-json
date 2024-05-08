@@ -13,17 +13,19 @@
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
   <div id="app">
+    <!-- Header -->
     <header class="page-header">
       <?php
       include __DIR__ . '/partials/template/header.php'; 
       ?>
     </header>
+    <!-- Main -->
     <main class="page-main">
       <div class="container">
         <div class="row">
           <div v-for="disk in discs" class="col-4 text-center">
             <div class="card">
-              <div class="card-header">
+              <div @click="showModal" class="card-header">
                 <img :src="disk.poster" alt="">
               </div>
               <div class="card-body">
@@ -35,7 +37,12 @@
           </div>
         </div>
       </div>
+      <!-- Modal -->
+      <div v-if="isVisible" class="modal">
+        
+      </div>
     </main>
+    <!-- Footer -->
     <footer>
       <?php
       include __DIR__ . '/partials/template/footer.php';
