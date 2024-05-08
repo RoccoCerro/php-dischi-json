@@ -3,6 +3,21 @@ img{
   width: 100%;
 }
 
+header.page-header{
+  background-color: #06131F;
+
+  & .ms-container{
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 15px 5px;
+  }
+
+  & img{
+    width: 50px;
+  }
+}
+
 main.page-main{
   background-color: #1D2D3C;
+  padding: 15px 0;
 }

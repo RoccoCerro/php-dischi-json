@@ -13,6 +13,11 @@
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
   <div id="app">
+    <header class="page-header">
+      <?php
+      include __DIR__ . '/partials/template/header.php'; 
+      ?>
+    </header>
     <main class="page-main">
       <div class="container">
         <div class="row">
@@ -31,6 +36,11 @@
         </div>
       </div>
     </main>
+    <footer>
+      <?php
+      include __DIR__ . '/partials/template/footer.php';
+      ?>
+    </footer>
   </div>
 
   <script src="./js/app.js"></script>
