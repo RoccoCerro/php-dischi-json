@@ -29,8 +29,8 @@
                 <img :src="disk.poster" alt="">
               </div>
               <div class="card-body">
-                <h3>{{disk.title}}</h3>
-                <h6>{{disk.author}}</h6>
+                <h4>{{disk.title}}</h4>
+                <div>{{disk.author}}</div>
                 <p>{{disk.year}}</p>
               </div>
             </div>
@@ -46,8 +46,8 @@
                     <img :src="discs[currentIndex].poster" alt="">
                   </div>
                   <div class="card-body">
-                    <h3>{{discs[currentIndex].title}}</h3>
-                    <h6>{{discs[currentIndex].author}}</h6>
+                    <h4>{{discs[currentIndex].title}}</h4>
+                    <div>{{discs[currentIndex].author}}</div>
                     <p>{{discs[currentIndex].year}}</p>
                   </div>
                 </div>

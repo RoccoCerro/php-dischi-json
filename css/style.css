@@ -11,6 +11,10 @@ header.page-header{
     max-width: 1224px;
     margin: 0 auto;
     padding: 15px 5px;
+
+    & .row{
+      margin-right: 0;
+    }
   }
 
   & img{
@@ -33,9 +37,14 @@ main.page-main{
       background-color: #112030;
       color: white;
       border: none;
+      height: 400px;
 
       & .card-header{
         border-bottom: none;
+      }
+
+      & .card-body div{
+        color: rgba(255, 255, 255, 0.473);
       }
     }
   }
