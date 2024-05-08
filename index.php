@@ -23,9 +23,9 @@
     <main class="page-main">
       <div class="container">
         <div class="row">
-          <div v-for="disk in discs" class="col-4 text-center">
+          <div v-for="(disk, index) in discs" class="col-4 text-center">
             <div class="card">
-              <div @click="showModal" class="card-header">
+              <div @click="showModal(index)" class="card-header">
                 <img :src="disk.poster" alt="">
               </div>
               <div class="card-body">
@@ -38,7 +38,22 @@
         </div>
         <!-- Modal -->
         <div v-if="isVisible" class="ms-modal fs-1 text-white">
-          ciao
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div @click="showModal(index)" class="card-header">
+                    <img :src="discs[currentIndex].poster" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h3>{{discs[currentIndex].title}}</h3>
+                    <h6>{{discs[currentIndex].author}}</h6>
+                    <p>{{discs[currentIndex].year}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

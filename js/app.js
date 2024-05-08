@@ -4,7 +4,8 @@ const { createApp } = Vue
     data() {
       return {
         discs: [],
-        isVisible: false
+        isVisible: false,
+        currentIndex: null,
       }
     },
     methods: {
@@ -15,8 +16,9 @@ const { createApp } = Vue
           console.log(this.discs);
         })
       },
-      showModal(){
+      showModal(currentIndex){
         this.isVisible = true;
+        this.currentIndex = currentIndex;
       }
     },
     created(){
