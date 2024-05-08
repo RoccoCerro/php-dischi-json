@@ -38,7 +38,7 @@
         </div>
         <!-- Modal -->
         <div v-if="isVisible" class="ms-modal fs-1 text-white">
-          <div class="container">
+          <div class="container" @click="closeModal()">
             <div class="row justify-content-center align-items-center">
               <div class="col-auto">
                 <div class="card">

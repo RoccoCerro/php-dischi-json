@@ -19,6 +19,9 @@ const { createApp } = Vue
       showModal(currentIndex){
         this.isVisible = true;
         this.currentIndex = currentIndex;
+      },
+      closeModal(){
+        this.isVisible = false;
       }
     },
     created(){
