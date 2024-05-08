@@ -39,8 +39,8 @@
         <!-- Modal -->
         <div v-if="isVisible" class="ms-modal fs-1 text-white">
           <div class="container">
-            <div class="row">
-              <div class="col">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-auto">
                 <div class="card">
                   <div @click="showModal(index)" class="card-header">
                     <img :src="discs[currentIndex].poster" alt="">
