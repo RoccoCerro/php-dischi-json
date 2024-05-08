@@ -24,10 +24,24 @@ main.page-main{
 
   & .container{
     position: relative;
+
+    & .col-4{
+      padding: 20px 20px;
+    }
+
+    & .card{
+      background-color: #112030;
+      color: white;
+      border: none;
+
+      & .card-header{
+        border-bottom: none;
+      }
+    }
   }
 }
 
-/* Style modal.php */
+/* Style modal */
 .ms-modal{
   width: 100%;
   height: 100%;
@@ -44,5 +58,7 @@ main.page-main{
 
   & .card{
     width: 350px;
+    background-color: #112031e3;
+    color: white;
   }
 }
