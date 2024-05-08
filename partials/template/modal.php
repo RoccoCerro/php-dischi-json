@@ -6,6 +6,6 @@
   <title>Document</title>
 </head>
 <body class="body-modal">
-  <img src="/img/spotify.png" alt="">
+
 </body>
 </html>

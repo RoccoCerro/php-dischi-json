@@ -36,10 +36,10 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Modal -->
-      <div v-if="isVisible" class="modal">
-        
+        <!-- Modal -->
+        <div v-if="isVisible" class="ms-modal fs-1 text-white">
+          ciao
+        </div>
       </div>
     </main>
     <!-- Footer -->

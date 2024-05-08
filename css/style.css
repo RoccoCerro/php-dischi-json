@@ -21,12 +21,20 @@ header.page-header{
 main.page-main{
   background-color: #1D2D3C;
   padding: 15px 0;
+
+  & .container{
+    position: relative;
+  }
 }
 
 /* Style modal.php */
-footer.modal{
-  width: 500px;
-  height: 500px;
-  aspect-ratio: 1/1;
-  background-color: black;
+.ms-modal{
+  width: 100%;
+  height: 100%;
+  background-color: #112031a8;
+  color: white;
+  font-size: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
