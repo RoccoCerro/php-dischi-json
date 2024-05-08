@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="ms-container">
+  <div class="container my-container">
     <div class="row">
       <div class="col">
         <img src="img/spotify2.png" alt="">

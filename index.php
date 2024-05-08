@@ -24,7 +24,7 @@
       <div class="container">
         <div class="row">
           <div v-for="(disk, index) in discs" class="col-4 text-center">
-            <div class="card">
+            <div class="card card-discs">
               <div @click="showModal(index)" class="card-header">
                 <img :src="disk.poster" alt="">
               </div>
@@ -38,14 +38,14 @@
         </div>
         <!-- Modal -->
         <?php
-        include __DIR__ . '/partials/template/modal.php';
+        require_once __DIR__ . '/partials/template/modal.php';
         ?>
       </div>
     </main>
     <!-- Footer -->
     <footer>
       <?php
-      include __DIR__ . '/partials/template/footer.php';
+      require_once __DIR__ . '/partials/template/footer.php';
       ?>
     </footer>
   </div>

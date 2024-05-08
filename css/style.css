@@ -7,14 +7,8 @@ img{
 header.page-header{
   background-color: #06131F;
 
-  & .ms-container{
-    max-width: 1224px;
-    margin: 0 auto;
+  & .my-container{
     padding: 15px 5px;
-
-    & .row{
-      margin-right: 0;
-    }
   }
 
   & img{
@@ -33,19 +27,25 @@ main.page-main{
       padding: 20px 20px;
     }
 
-    & .card{
-      background-color: #112030;
-      color: white;
+    & .card {
+      color: white;      
       border: none;
-      height: 400px;
-
-      & .card-header{
-        border-bottom: none;
-      }
+      height: 100%;
 
       & .card-body div{
         color: rgba(255, 255, 255, 0.473);
+
       }
+
+      & .card-header{
+        border-bottom: none;
+        text-align: center;
+      }
+    }
+
+    & .card.card-discs{
+      background-color: #112030;
+
     }
   }
 }
@@ -68,6 +68,9 @@ main.page-main{
   & .card{
     width: 350px;
     background-color: #112031e3;
-    color: white;
+
+    & .card-body{
+      text-align: center;
+    }
   }
 }
